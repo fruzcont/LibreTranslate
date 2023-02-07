@@ -21,7 +21,7 @@ RUN ./venv/bin/pip install Babel==2.11.0 && ./venv/bin/python scripts/compile_lo
 
 FROM python:3.10.9-slim-bullseye
 
-ARG with_models=false
+ARG with_models=true
 ARG models=""
 
 RUN addgroup --system --gid 1032 libretranslate && adduser --system --uid 1032 libretranslate && mkdir -p /home/libretranslate/.local && chown -R libretranslate:libretranslate /home/libretranslate/.local
