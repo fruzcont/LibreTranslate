@@ -21,3 +21,8 @@ services:
 
 # volumes:
 #   libretranslate_api_keys:
+
+networks:
+  default:
+    name: default_net
+    external: true
