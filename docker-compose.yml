@@ -1,8 +1,8 @@
 version: "3"
 
 services:
-  libretranslate:
-    container_name: libretranslate
+  libre_translate:
+    container_name: libre_translate
     build:
       context: .
       dockerfile: docker/Dockerfile
